@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px auto auto 20px;
+    gap: none;
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header "
+                         "main main main main"
+                         "pie pie pie pie";
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(162, 171, 179);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+.nav ul li{
+    padding: 1px;
+    margin-left: 2px;
+}
+.nav ul li a{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: aliceblue;
+}
+.logo img{
+    width: 40px;
+    display: flex;
+}
+.nav h3{
+    margin-right: 40px;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+.main{
+    grid-area: main;
+    background-image: url(../img/CalleCerco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+.pie{
+    grid-area: pie;
+    background-color:rgb(162, 171, 179) ;
+    color: rgb(0, 0, 0);
+ }
+ @media(min-width:768px){
+    .nav{ 
+        padding: 10px;
+    }
+    .nav h3{
+       margin-right: 40%;
+    }
+    .nav ul li a{
+        font-size: 17px;
+    }
+    .main div{
+        height: 400px;
+        width: 100%;
+        font-size: 23px;
+        
+    }
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 80px 70px auto auto;
+        gap: none;
+        grid-template-areas: "nav nav nav nav"
+                             "header header header header "
+                             "main main main main"
+                             "pie pie pie pie";
+    }
+    .nav ul li a{
+    font-size: 20px;
+    
+     }
+    
+   .nav h3{
+        margin-right: 60%;
+        font-size: 23px;
+     }
+     .header h2{
+        font-size: 35px;
+     }
+    .main{
+        height: 600px;
+        padding-top: 100px;
+        
+    }
+    .main div{
+        font-size: 30px;
+    }
+        
+    
+ }
