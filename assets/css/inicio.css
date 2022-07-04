@@ -80,6 +80,17 @@
     color: rgb(0, 0, 0);
  }
  @media(min-width:768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 80px auto auto 20px;
+        gap: none;
+        grid-template-areas: "nav nav nav nav"
+                             "header header header header "
+                             "main main main main"
+                             "pie pie pie pie";
+    }
+    
     .nav{ 
         padding: 10px;
     }
@@ -97,7 +108,7 @@
     }
 }
 
-@media(min-width:1024px){
+@media(min-width:1025px){
     .contenedor{
         display: grid;
         grid-template-columns: repeat(4,1fr);

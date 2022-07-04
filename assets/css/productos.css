@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 220px auto 20px;
+    gap: none;
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header "
+                         "main main main main"
+                         "pie pie pie pie";
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(162, 171, 179);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+.nav ul li{
+    padding: 1px;
+    margin-left: 2px;
+}
+.nav ul li a{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: aliceblue;
+}
+.logo img{
+    width: 40px;
+    display: flex;
+}
+.nav h3{
+    margin-right: 40px;
+}
+   
+.header{
+     grid-area: header;
+     background-image: url(../img/Rolers\ camioneta\ vintage.webp)
+
+}    
+.header{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(10, 10, 10);
+    display: flex;
+    text-align: center;
+    margin: 3px;
+    
+}
+.header div{
+    padding: 7%;
+    
+}
+.header div h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.main{
+    grid-area: main;
+    background-color:rgb(0, 0, 0)
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 200px;
+    align-items: center;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+    background-color:rgb(162, 171, 179);
+}
+.card img{
+    width: 200px;
+}
+.cardInfo{
+    text-align: center;
+}
+.cardInfo
+.btn{
+    border: none;
+    border-radius: 15px;
+    background-color:
+    #0f0f0f ;
+    color: white;
+    padding: 9px;
+}
+.pie{
+    grid-area: pie;
+    background-color:rgb(162, 171, 179) ;
+}
+
+@media(min-width:768px){
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 80px 300px auto 20px;
+        gap: none;
+        grid-template-areas: "nav nav nav nav"
+                             "header header header header "
+                             "main main main main"
+                             "pie pie pie pie";
+    }
+    .nav{
+        grid-area: nav;
+    }
+    .nav ul li a{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .nav h3{
+        font-size: 30px;
+        font-weight: 900;
+        margin-right: 90px;
+    }
+    .logo img{
+        margin-left: 30px;
+        width: 50px;
+    }
+} /*Pantalla Completa*/
+    @media(min-width:1025px){
+
+    
+
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 80px 300px auto 20px;
+            gap: none;
+            grid-template-areas: "nav nav nav nav"
+                                 "header header header header "
+                                 "main main main main"
+                                 "pie pie pie pie";
+        }
+        .nav{
+            grid-area: nav;
+
+        
+            .nav ul li a{
+            font-size: 20px;
+            
+            
+         }
+            
+           .nav h3{
+                margin-right: 60%;
+                font-size: 23px;
+             }
+           
+            .header h2{
+                font-size: 35px;
+             }
+             
+            .main{
+                height: 2000px;
+                padding-top: 100px;
+                grid-area: main;
+               
+                
+            }
+            .main div{
+                font-size: 30px;
+            }
+                
+     
+        } 
+     }
