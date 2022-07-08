@@ -107,7 +107,7 @@
         
     }
 }
-
+/*Pantalla Completa*/
 @media(min-width:1025px){
     .contenedor{
         display: grid;
